@@ -2,15 +2,15 @@
 
 #### Your name
 
-TODO
+Logan Bennett
 
 #### Your section leader's name
 
-TODO
+My TA is Chong Li
 
 #### Project title
 
-TODO
+The Color in Everything
 
 ***
 
@@ -18,12 +18,12 @@ Short answers for the below questions suffice. If you want to alter your plan fo
 
 #### What have you done for your project so far?
 
-TODO
+Done the Homepage track to practice HTML
 
 #### What have you not done for your project yet?
 
-TODO
+Implented the color uploading onto the website
 
 #### What problems, if any, have you encountered?
 
-TODO
+None so far
