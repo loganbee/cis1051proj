@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>
+            Color In Everythng
+        </title>
+    </head>
+
+
+    <style>
+        .mid
+           {
+            text-align: center;
+            right: 50%;
+            bottom: 50%;
+            transform: translate(50%,50%);
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+           }
+
+           body 
+           { 
+               background-image:url("https://images.squarespace-cdn.com/content/v1/58ad28e2e3df28b8c47a3b47/1554146257829-3IPHZ5JBEEGGUFPXP8LA/ke17ZwdGBToddI8pDm48kLnfZvQ9iwxKU6eubAUQjId7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdSrVm6RXq3oQdVJ-8ns5p39BVUfxDFykdg7rfFMfNcWm4bjm9DAHF2kOsIZRJKXnA/wide-rainbow-gif.gif"); 
+               background-repeat: no-repeat; 
+               background-size: 50%;
+               background-position-x: center;
+               background-position-y: -15px;
+
+               background-color: #ddf7f8;
+
+           }
+        
+    </style>
+
+    <script>
+        
+        whatColor = [
+        'LightCoral', 'Salmon', 'DarkSalmon', 'LightSalmon', 'Crimson', 'Red', 'FireBrick', 'DarkRed', 'Pink', 'LightPink', 'HotPink', 'DeepPink', 'MediumVioletRed', 'PaleVioletRed', 'LightSalmon', 'Coral', 'Tomato', 'OrangeRed', 'DarkOrange', 'Orange', 'Gold', 'Yellow', 'LightYellow', 'LemonChiffon', 'LightGoldenrodYellow', 'PapayaWhip', 'Moccasin', 'PeachPuff', 'PaleGoldenrod', 'Khaki', 'DarkKhaki', 'Lavender', 'Thistle', 'Plum', 'Violet', 'Orchid', 'Fuchsia', 'Magenta', 'MediumOrchid', 'MediumPurple', 'RebeccaPurple', 'BlueViolet', 'DarkViolet', 'DarkOrchid', 'DarkMagenta', 'Purple', 'Indigo', 'SlateBlue', 'DarkSlateBlue', 'MediumSlateBlue', 'GreenYellow', 'Chartreuse', 'LawnGreen', 'Lime', 'LimeGreen', 'PaleGreen', 'LightGreen', 'MediumSpringGreen', 'SpringGreen', 'MediumSeaGreen', 'SeaGreen', 'ForestGreen', 'Green', 'DarkGreen', 'YellowGreen', 'OliveDrab', 'Olive', 'DarkOliveGreen', 'MediumAquamarine', 'DarkSeaGreen', 'LightSeaGreen', 'DarkCyan', 'Teal', 'Aqua', 'Cyan', 'LightCyan', 'PaleTurquoise', 'Aquamarine', 'Turquoise', 'MediumTurquoise', 'DarkTurquoise', 'CadetBlue', 'SteelBlue', 'LightSteelBlue', 'PowderBlue', 'LightBlue', 'SkyBlue', 'LightSkyBlue', 'DeepSkyBlue', 'DodgerBlue', 'CornflowerBlue', 'MediumSlateBlue', 'RoyalBlue', 'Blue', 'MediumBlue', 'DarkBlue', 'Navy', 'MidnightBlue', 'Cornsilk', 'BlanchedAlmond', 'Bisque', 'NavajoWhite', 'Wheat', 'BurlyWood', 'Tan', 'RosyBrown', 'SandyBrown', 'Goldenrod', 'DarkGoldenrod', 'Peru', 'Chocolate', 'SaddleBrown', 'Sienna', 'Brown', 'Maroon', 'White', 'Snow', 'HoneyDew', 'MintCream', 'Azure', 'AliceBlue', 'GhostWhite', 'WhiteSmoke', 'SeaShell', 'Beige', 'OldLace', 'FloralWhite', 'Ivory', 'AntiqueWhite', 'Linen', 'LavenderBlush', 'MistyRose', 'Gainsboro', 'LightGray', 'Silver', 'DarkGray', 'Gray', 'DimGray', 'LightSlateGray', 'SlateGray', 'DarkSlateGray', 'Black',
+        ]
+
+        function transform()
+        {
+            let inputValue = document.querySelector("#userInput").value;
+            var inputValueItalics = inputValue.italics();
+
+            document.write("<br></br>")
+            document.write("<br></br>")
+
+            document.write('<p style="font-family:Arial,sans-serif; text-align: center">' + '"' + inputValueItalics + '"' + '</p>')
+
+            for (i = 0; i < inputValue.length; i++) {
+
+                const randomCol = whatColor[Math.floor(Math.random() * whatColor.length)];
+
+                var str="■"
+                document.write(str.fontcolor(randomCol).fontsize(30))
+
+                if ((i + 1) % 43 == 0) {
+
+                    document.write("<br></br>")
+
+                }
+
+            }
+
+            document.write("<br></br>")
+
+            var finalMessage = "These are your colors, transformed from your thoughts."
+            document.write('<p style="font-family:Arial,sans-serif; text-align: center">' + finalMessage + '</p>')
+
+            var finalMessageSecond = "Even in our worst moments, there is beauty. Every negative thought you have still comes from a person full of life and love."
+            document.write('<p style="font-family:Arial,sans-serif; text-align: center">' + finalMessageSecond + '</p>')
+
+            var finalMessageThird = "Your presence brings out the color in everything."
+            document.write('<p style="font-family:Arial,sans-serif; text-align: center">' + finalMessageThird + '</p>')
+
+        }
+  
+
+    </script>
+
+    <body>
+
+        <div class="mid">
+
+            <h1>Hello {{ name }}! (๑ᴖ‿ᴖ๑)♪❤</h1>
+            <p>Please enter your feelings below.</p>
+            <form onsubmit="transform(); return false;">
+                <input name="thoughts" type="text" id="userInput">
+                <input type="submit" value="Let's Find the Color!">
+
+            </form>
+
+        </div>
+
+
+    </body>
+
+</html>
