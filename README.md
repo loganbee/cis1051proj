@@ -13,4 +13,4 @@ Just me :)
 If I come up with another idea I like better soon, do I need to submit a new preposal? Or do I just edit my readme file?
 
 ## VIDEO LINK:
-https://youtu.be/502mzGVGFfs
+https://www.youtube.com/watch?v=VUUtVM_8Dv8
